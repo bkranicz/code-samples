@@ -1,0 +1,228 @@
+/* 
+Base sections
+*/
+body {
+  margin: 0;
+  font-family: 'AileronRegular';
+  background-color: white;
+}
+
+section {
+  height: 100vh;
+  display:grid;
+  align-items:center;
+}
+
+@media screen and (max-width: 1199px) { 
+  section {
+    margin-top: 120px;
+    height: auto;
+    display:grid;
+    align-items:center;
+  }
+}
+
+/* 
+Base font style
+*/
+b {
+  font-family: 'AileronHeavy' !important;
+  font-weight: 700 !important;
+}
+
+h1 {
+  font-family: 'AileronHeavy' !important;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 57px;
+  color: #444444;
+}
+
+p {
+  font-family: 'AileronRegular' !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+  color: #444444;
+}
+
+@media screen and (max-width: 1199px) {
+  h1 {
+      font-size: 36px;
+      line-height: 43.2px;
+  }
+
+  p {
+      font-size: 16px;
+      line-height: 28px;
+  }
+}
+
+.text-orange {
+  color: #F3AA2B !important;
+}
+
+.text-black {
+  color: black !important;
+}
+
+.text-fw-600 {
+  font-family: 'AileronHeavy' !important;
+  font-weight: 600 !important;
+}
+.text-fw-700 {
+  font-family: 'AileronHeavy' !important;
+  font-weight: 700 !important;
+}
+.text-fw-800 {
+  font-family: 'AileronHeavy' !important;
+  font-weight: 800 !important;
+}
+.text-fw-900 {
+  font-family: 'AileronHeavy' !important;
+  font-weight: 900 !important;
+}
+
+/* 
+Padding and margin settings
+*/
+
+.pb_50 {
+  padding-bottom: 50px;
+}
+
+.pb_100 {
+  padding-bottom: 100px;
+}
+
+.pt_100 {
+  padding-top: 100px;
+}
+
+.ptb_100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ptb_50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* 
+Others
+*/
+
+.section-image {
+  text-align: right;
+}
+
+@media screen and (max-width: 1199px) { 
+  .section-image {
+    text-align: center;
+  }
+
+  .section-image img {
+    max-width: 70%;
+  }
+}
+
+.full-image img {
+  width: 100% !important;
+}
+
+
+.shadow-bottom {
+  -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 30px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: transparent;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: transparent;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  box-shadow: 5px 0 53px -10px #444444;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 200vw !important;
+    height: 200vh !important;
+    left: -100vw !important;
+    top: -100vh !important;
+}
+
+.bm-cross {
+    background: #444444;
+}
+
+.bm-cross-button {
+    right: 20px !important;
+    top: 20px !important;
+}
+.bm-cross {
+    height: 25px !important;
+    width: 2px !important;
+    color: white !important;
+}

@@ -1,0 +1,36 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: strapi-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      if ($host = 'delidunakanyar.hu' ) {
+        rewrite ^ https://www.delidunakanyar.hu$request_uri permanent;
+      }
+spec:
+  tls:
+  - hosts:
+    - strapi.bkrani.cz
+    - www.delidunakanyar.hu
+    - delidunakanyar.hu
+    secretName: strapi-tls
+  rules:
+  - host: strapi.bkrani.cz
+    http:
+      paths:
+      - backend:
+          serviceName: strapi
+          servicePort: 80
+  - host: www.delidunakanyar.hu
+    http:
+      paths:
+      - backend:
+          serviceName: deldunakanyar-internal
+          servicePort: 80
+  - host: delidunakanyar.hu
+    http:
+      paths:
+      - backend:
+          serviceName: deldunakanyar-internal
+          servicePort: 80

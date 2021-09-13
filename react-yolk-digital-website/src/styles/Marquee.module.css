@@ -1,0 +1,28 @@
+.marquee-row {
+    font-size: 150px;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-bottom: 2px;
+    line-height: 175px;
+    font-family: 'AileronHeavy';
+}
+
+.first-row {
+    color: #FDE4C9;
+}
+
+.second-row {
+    color: #F1EFE2;
+}
+
+.third-row {
+    color: #F3AA2B;
+}
+
+@media screen and (max-width: 1199px) {
+    .marquee-row { 
+        font-size: 42px;
+        line-height: 50.4px;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="255px" height="357px" viewBox="0 0 255 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.457198914 254.607498 0.457198914 254.607498 357 0 357"></polygon>
+    </defs>
+    <g id="mvp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-475.000000, -5925.000000)" id="Group-14">
+            <g transform="translate(475.000000, 5925.000000)">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M127.364936,357.000434 C182.963581,357.000434 224.934852,323.031124 243.342394,273.975673 C251.093962,253.317663 256.457606,234.694861 254.009174,207.213046 C245.747606,114.472229 193.347267,0.457198914 127.544301,0.457198914 C61.7413347,0.457198914 10.9466314,114.472229 1.07726695,207.213046 C-0.405190678,221.14489 -0.312266949,233.844326 1.07726695,246.094628 C8.93472458,315.378482 60.2221398,357.000434 127.364936,357.000434" id="Fill-1" fill="#FDE4C9" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M232.398193,114 L198,141.740985 L202.001936,148 L237,128.114379 C236.993708,128.096642 234.084543,118.458689 234.017425,118.53629 C234.011133,118.547375 234.019522,118.53629 234.015328,118.522987 C232.398193,114 232.404485,114.019954 232.398193,114" id="Fill-4" fill="#FEFEFE"></path>
+                <polygon id="Fill-6" fill="#FEFEFE" points="200.505767 140.692545 164 139 164.750437 142.619675 202 148"></polygon>
+                <polygon id="Fill-8" fill="#FEFEFE" points="164.262207 140 142 154.382365 143.125189 156 165 143.124235"></polygon>
+                <polygon id="Fill-10" fill="#FEFEFE" points="142.835863 154 133 169.714286 133.193291 170 144 155.430627"></polygon>
+                <polygon id="Fill-12" fill="#FEFEFE" points="141.878636 155 127.012989 158.592975 127 159 143 156.533058"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

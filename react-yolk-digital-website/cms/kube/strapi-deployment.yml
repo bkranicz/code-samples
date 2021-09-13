@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: strapi
+  labels:
+    app: strapi
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: strapi
+  template:
+    metadata:
+      labels:
+        app: strapi
+    spec:
+      volumes:
+        - name: strapi-volume-claim
+          persistentVolumeClaim:
+            claimName: strapi-volume-claim
+      containers:
+        - name: strapi
+          image: strapi/strapi:3.5.3-node12-alpine
+          terminationMessagePath: /tmp/my-log
+          volumeMounts:
+            - name: strapi-volume-claim
+              mountPath: /srv/app
+          ports:
+            - containerPort: 1337
+          env:
+          - name: DATABASE_URI
+            valueFrom:
+              configMapKeyRef:
+                key: databaseUri
+                name: strapi-config
+          - name: DATABASE_SSL
+            valueFrom:
+              configMapKeyRef:
+                key: databaseSsl
+                name: strapi-config
+          - name: DATABASE_CLIENT
+            valueFrom:
+              configMapKeyRef:
+                key: databaseClient
+                name: strapi-config
+          - name: DATABASE_NAME
+            valueFrom:
+              configMapKeyRef:
+                key: databaseName
+                name: strapi-config
+          - name: DATABASE_HOST
+            valueFrom:
+              configMapKeyRef:
+                key: databaseHost
+                name: strapi-config
+          - name: DATABASE_PORT
+            valueFrom:
+              configMapKeyRef:
+                key: databasePort
+                name: strapi-config
+          - name: DATABASE_USERNAME
+            valueFrom:
+              configMapKeyRef:
+                key: databaseUsername
+                name: strapi-config
+          - name: DATABASE_PASSWORD
+            valueFrom:
+              configMapKeyRef:
+                key: databasePassword
+                name: strapi-config

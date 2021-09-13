@@ -1,0 +1,44 @@
+.job {
+    padding-top: 150px;
+}
+
+.job h1 {
+    font-family: 'AileronHeavy' !important;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 57px;
+    color: #444444;
+}
+
+.job-title {
+    font-size: 72px !important;
+    line-height: 80px;
+}
+
+.job p {
+    font-family: 'AileronRegular' !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    color: #444444;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .job-title {
+        font-size: 42px !important;
+        line-height: 46px;
+    }
+
+    .job h1 {
+        font-size: 36px;
+        line-height: 43.2px;
+    }
+
+    .job p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}

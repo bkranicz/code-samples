@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="255px" height="357px" viewBox="0 0 255 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group 14 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.457198914 254.607498 0.457198914 254.607498 357 0 357"></polygon>
+    </defs>
+    <g id="mvp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-146.000000, -5927.000000)" id="Group-14-Copy">
+            <g transform="translate(146.000000, 5927.000000)">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M127.364936,357.000434 C182.963581,357.000434 224.934852,323.031124 243.342394,273.975673 C251.093962,253.317663 256.457606,234.694861 254.009174,207.213046 C245.747606,114.472229 193.347267,0.457198914 127.544301,0.457198914 C61.7413347,0.457198914 10.9466314,114.472229 1.07726695,207.213046 C-0.405190678,221.14489 -0.312266949,233.844326 1.07726695,246.094628 C8.93472458,315.378482 60.2221398,357.000434 127.364936,357.000434" id="Fill-1" fill="#FDE4C9" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
